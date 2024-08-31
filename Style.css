@@ -1,0 +1,230 @@
+.background {
+    min-width: 100;
+    min-height: 100;
+    top: 2969px;
+    left: 3345px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    gap: 0px;
+    opacity: 0px;
+    background-image: url(https://s3-alpha-sig.figma.com/img/2a4c/044e/0ad29c703759b887a378fcf1e955470a?Expires=1725235200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=oU49g9HvdTwLvVa66Na83a~DWNFTi9y1I23ry5DRImaoN3dZQOJeZlDxPPunaYpb2ycwjSNr4F7687h56XeSYTwIMZNCwjqS9rEQyymKWb11QgVbJIsNTXCZKrUR4XtAOwxSVBFdrjx7zTjkXzi68EIa1lbOuwZnknSR0UFQe5hdkgGTaoEUHuyTSdYJnbs7L-T0SxUkesdNrZpklTzNk662UCuO-lRw~u9MGaFbjfh0eRcC2edIH27n2hkwihJ8e2UvZHQH8A7ghv5mFcC8aYFNaskbA0f9UBve2Lpy7t0li-yPsCR6pf0j8p0k98vwyogwysGQ0XQbHNRu1zUJbw__);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.text-chill {
+    height: 44px;
+    gap: 0px;
+    opacity: 0px;
+
+    font-family: Londrina Solid;
+    font-size: 50px;
+    font-weight: 400;
+    text-align: center;
+    color: #FFFFFF;
+
+}
+
+.gambarChill {
+    height: 44px;
+    padding-right: 5px;
+    gap: 0px;
+    opacity: 0px;
+    text-align: center;
+
+}
+
+.background-login {
+    width: 529px;
+    height: 663px;
+    top: 181px;
+    left: 456px;
+    padding: 40px;
+    gap: 37px;
+    border-radius: 16px;
+    opacity: 0px;
+    background: #181A1CD6;
+    scale: 0.7;
+}
+
+.text-masuk {
+    font-family: Lato;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 35.2px;
+    text-align: center;
+    color: #FFFFFF;
+
+}
+
+.text-selamatDatang {
+
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: center;
+    color: #FFFFFF;
+
+}
+
+.text-input {
+
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 25.2px;
+    letter-spacing: 0.20000000298023224px;
+    color: #FFFFFF;
+
+}
+
+.input::placeholder {
+
+    font-family: Lato;
+    color: #C1C2C4;
+    font-size: 16px;
+
+
+}
+
+.input {
+    width: 100%;
+    height: Hug (50px)px;
+    padding: 14px 0px 14px 10px;
+    gap: 10px;
+    border-radius: 24px;
+    border: 1px;
+    opacity: 0px;
+    position: relative;
+    box-sizing: border-box;
+    border: 1px solid #E7E3FC3B;
+    background: transparent;
+
+    font-family: Lato;
+    color: #C1C2C4;
+    font-size: 16px;
+}
+
+.input-icon {
+    position: absolute;
+    right: 10px;
+    margin: auto 0;
+    top: 0;
+    bottom: 0;
+
+}
+
+.text-daftar {
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+    letter-spacing: 0.20000000298023224px;
+    color: #C1C2C4;
+
+}
+
+.text-span {
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22.4px;
+    letter-spacing: 0.20000000298023224px;
+    color: #FFFFFF;
+
+}
+
+.text-lupa {
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+    letter-spacing: 0.20000000298023224px;
+    color: #FFFFFF;
+    display: flow-root;
+
+}
+
+.text-login {
+    width: 100%;
+    height: Hug (50px)px;
+    padding: 14px 20px 14px 20px;
+    gap: 10px;
+    border-radius: 24px;
+    border: 1px;
+    opacity: 0px;
+    color: #FFFFFF;
+    background: #3D4142;
+    border: 1px solid #E7E3FC3B
+}
+
+.text-masukGoogle {
+
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22.4px;
+    letter-spacing: 0.20000000298023224px;
+    color: #FFFFFF;
+    border: 1px solid #E7E3FC3B;
+    width: 100%;
+    height: Fixed (47px)px;
+    padding: 14px 20px 14px 20px;
+    gap: 20px;
+    border-radius: 24px;
+    opacity: 0px;
+    background: transparent;
+
+}
+
+.text-googleGambar {
+    width: 18px;
+    height: 18px;
+    gap: 0px;
+    opacity: 0px;
+    margin-right: 3px;
+
+}
+
+.text-atau {
+    color: #C1C2C4;
+    text-align: center;
+}
+
+.divide {
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.div-bungkus {
+    width: 100%;
+}
+
+.div-inputSandi {
+    position: relative;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+body {
+    width: 100vw;
+}
+
+.text-center {
+    text-align: center;
+}

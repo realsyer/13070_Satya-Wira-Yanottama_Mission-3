@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="Beranda.css" />
+    <link rel="stylesheet" href="Reset.css" />
+
+    <title>Document</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="menu">
+        <ul class="menu-list">
+          <li class="header__menu__logo">
+            <svg
+              width="18"
+              height="16"
+              viewBox="0 0 18 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16.3668 0.63501L13.0919 1.22001L15.3752 3.87501L17.0168 3.57501L16.3668 0.63501ZM10.6419 1.65501L9.00019 1.94751L11.2919 4.59501L12.9252 4.30251L10.6419 1.65501ZM6.55852 2.37501L4.91685 2.68251L7.20852 5.33001L8.84185 5.03751L6.55852 2.37501ZM2.46685 3.12501L1.65019 3.26751C1.21717 3.34537 0.83619 3.57471 0.590889 3.90516C0.345588 4.23562 0.256022 4.64017 0.341855 5.03001L0.666855 6.50001L4.75019 5.77251L2.46685 3.12501ZM0.666855 6.50001V14C0.666855 14.8325 1.41685 15.5 2.33352 15.5H15.6668C16.5918 15.5 17.3335 14.8325 17.3335 14V6.50001H0.666855Z"
+                fill="white"
+              />
+            </svg>
+            <p>CHILL</p>
+          </li>
+          <li>Series</li>
+          <li>Film</li>
+          <li>Daftar Saya</li>
+        </ul>
+      </div>
+      <div class="profile">
+        <div class="profilePicture"></div>
+        <div id="buttonMenuMobile" class="panah">
+          <svg viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M0.94 0.726562L4 3.7799L7.06 0.726562L8 1.66656L4 5.66656L0 1.66656L0.94 0.726562Z"
+              fill="white"
+            />
+          </svg>
+        </div>
+
+        <ul id="menuMobile" class="header__menu__profile">
+          <li>
+            <div>
+              <svg
+                width="12"
+                height="12"
+                viewBox="0 0 12 12"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M5.99984 0.666748C6.70708 0.666748 7.38536 0.9477 7.88546 1.4478C8.38555 1.94789 8.6665 2.62617 8.6665 3.33341C8.6665 4.04066 8.38555 4.71894 7.88546 5.21903C7.38536 5.71913 6.70708 6.00008 5.99984 6.00008C5.29259 6.00008 4.61432 5.71913 4.11422 5.21903C3.61412 4.71894 3.33317 4.04066 3.33317 3.33341C3.33317 2.62617 3.61412 1.94789 4.11422 1.4478C4.61432 0.9477 5.29259 0.666748 5.99984 0.666748ZM5.99984 7.33342C8.9465 7.33342 11.3332 8.52675 11.3332 10.0001V11.3334H0.666504V10.0001C0.666504 8.52675 3.05317 7.33342 5.99984 7.33342Z"
+                  fill="#FFF"
+                />
+              </svg>
+            </div>
+            <p>Profil Saya</p>
+          </li>
+          <li>
+            <div>
+              <svg
+                width="14"
+                height="13"
+                viewBox="0 0 14 13"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M7.00016 10.5133L11.1202 12.9999L10.0268 8.31325L13.6668 5.15992L8.8735 4.74659L7.00016 0.333252L5.12683 4.74659L0.333496 5.15992L3.96683 8.31325L2.88016 12.9999L7.00016 10.5133Z"
+                  fill="white"
+                />
+              </svg>
+            </div>
+            <p>Ubah Premium</p>
+          </li>
+          <li id="menuMobileKeluar">
+            <div>
+              <svg
+                width="12"
+                height="12"
+                viewBox="0 0 12 12"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10.6667 0H1.33333C0.593333 0 0 0.593333 0 1.33333V4H1.33333V1.33333H10.6667V10.6667H1.33333V8H0V10.6667C0 11.0203 0.140476 11.3594 0.390524 11.6095C0.640573 11.8595 0.979711 12 1.33333 12H10.6667C11.0203 12 11.3594 11.8595 11.6095 11.6095C11.8595 11.3594 12 11.0203 12 10.6667V1.33333C12 0.593333 11.4 0 10.6667 0ZM4.72 8.38667L5.66667 9.33333L9 6L5.66667 2.66667L4.72 3.60667L6.44667 5.33333H0V6.66667H6.44667L4.72 8.38667Z"
+                  fill="white"
+                />
+              </svg>
+            </div>
+            <p>Keluar</p>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <div class="preview">
+      <div class="previewCard">
+        <div class="gradient"></div>
+
+        <div class="textPreviewCard">
+          <h1 class="titlePreviewCard">Duty After School</h1>
+          <p class="descPreviewCard">
+            Sebuah benda tak dikenal mengambil alih dunia. Dalam keputusasaan, Departemen Pertahanan
+            mulai merekrut lebih banyak tentara, termasuk siswa sekolah menengah. Mereka pun segera
+            menjadi pejuang garis depan dalam perang.
+          </p>
+
+          <div class="wrapperPreviewCard">
+            <div class="buttonPreviewCard">
+              <button class="buttonMulai">Mulai</button>
+              <button class="buttonSelengkapnya">
+                <div class="buttonTandaSeru">
+                  <svg
+                    width="10"
+                    height="11"
+                    viewBox="0 0 10 11"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M4.5 4H5.5V3H4.5M5 9.5C2.795 9.5 1 7.705 1 5.5C1 3.295 2.795 1.5 5 1.5C7.205 1.5 9 3.295 9 5.5C9 7.705 7.205 9.5 5 9.5ZM5 0.5C4.34339 0.5 3.69321 0.629329 3.08658 0.880602C2.47995 1.13188 1.92876 1.50017 1.46447 1.96447C0.526784 2.90215 0 4.17392 0 5.5C0 6.82608 0.526784 8.09785 1.46447 9.03553C1.92876 9.49983 2.47995 9.86812 3.08658 10.1194C3.69321 10.3707 4.34339 10.5 5 10.5C6.32608 10.5 7.59785 9.97322 8.53553 9.03553C9.47322 8.09785 10 6.82608 10 5.5C10 4.84339 9.87067 4.19321 9.6194 3.58658C9.36812 2.97995 8.99983 2.42876 8.53553 1.96447C8.07124 1.50017 7.52005 1.13188 6.91342 0.880602C6.30679 0.629329 5.65661 0.5 5 0.5ZM4.5 8H5.5V5H4.5V8Z"
+                      fill="white"
+                    />
+                  </svg>
+                </div>
+                <span class="buttonTextSelengkapnya">Selengkapnya</span>
+              </button>
+              <button class="buttonUmur">18+</button>
+            </div>
+            <div class="preview__logo__sound">
+              <svg viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="0.5" y="0.5" width="23" height="24" rx="11.5" stroke="#C1C2C4" />
+                <path
+                  d="M12 6.66667L10.6067 8.06L12 9.45333M6.84667 6L6 6.84667L9.15333 10H6V14H8.66667L12 17.3333V12.8467L14.8333 15.6867C14.3867 16.0267 13.8867 16.3067 13.3333 16.4667V17.8467C14.2533 17.6333 15.0867 17.2133 15.7867 16.64L17.1533 18L18 17.1533L12 11.1533M16.6667 12C16.6667 12.6267 16.5333 13.2133 16.3067 13.76L17.3133 14.7667C17.7467 13.94 18 13 18 12C18 9.14667 16 6.76 13.3333 6.15333V7.52667C15.26 8.1 16.6667 9.88667 16.6667 12ZM15 12C15 10.82 14.3333 9.80667 13.3333 9.31333V10.7867L14.9667 12.42C15 12.2867 15 12.14 15 12Z"
+                  fill="#C1C2C4"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="continue">
+      <p class="continue__title">Melanjutkan Tonton Film</p>
+      <div class="relative continue__card--padding">
+        <div class="continue__card__button__wrapper">
+          <div class="continue__card__button__next">
+            <svg
+              width="44"
+              height="44"
+              viewBox="0 0 44 44"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect width="44" height="44" rx="22" fill="#2F3334" />
+              <rect
+                x="0.5"
+                y="0.5"
+                width="43"
+                height="43"
+                rx="21.5"
+                stroke="#E7E3FC"
+                stroke-opacity="0.23"
+              />
+              <path
+                d="M30.0002 21.0001V23.0001H18.0002L23.5002 28.5001L22.0802 29.9201L14.1602 22.0001L22.0802 14.0801L23.5002 15.5001L18.0002 21.0001H30.0002Z"
+                fill="white"
+              />
+            </svg>
+          </div>
+
+          <div class="continue__card__button__prev">
+            <svg
+              width="44"
+              height="44"
+              viewBox="0 0 44 44"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect width="44" height="44" rx="22" fill="#2F3334" />
+              <rect
+                x="0.5"
+                y="0.5"
+                width="43"
+                height="43"
+                rx="21.5"
+                stroke="#E7E3FC"
+                stroke-opacity="0.23"
+              />
+              <path
+                d="M14 21.0001V23.0001H26L20.5 28.5001L21.92 29.9201L29.84 22.0001L21.92 14.0801L20.5 15.5001L26 21.0001H14Z"
+                fill="white"
+              />
+            </svg>
+          </div>
+        </div>
+        <ul class="continue__card__wrapper">
+          <li class="continue__card continue__background--1">
+            <div class="gradient"></div>
+            <div class="continue__card__text">
+              <p class="continue__card__title">Don’t Look Up</p>
+              <div class="continue__card__rating__wrapper">
+                <div class="icon-star">
+                  <svg
+                    width="10"
+                    height="10"
+                    viewBox="0 0 10 10"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M5 7.635L8.09 9.5L7.27 5.985L10 3.62L6.405 3.31L5 0L3.595 3.31L0 3.62L2.725 5.985L1.91 9.5L5 7.635Z"
+                      fill="white"
+                    />
+                  </svg>
+                </div>
+                <p class="continue__card__rating">4.4/5</p>
+              </div>
+            </div>
+          </li>
+          <li class="continue__card continue__background--2">
+            <div class="gradient"></div>
+            <div class="continue__card__text">
+              <p class="continue__card__title">The Batman</p>
+              <div class="continue__card__rating__wrapper">
+                <div class="icon-star">
+                  <svg
+                    width="10"
+                    height="10"
+                    viewBox="0 0 10 10"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M5 7.635L8.09 9.5L7.27 5.985L10 3.62L6.405 3.31L5 0L3.595 3.31L0 3.62L2.725 5.985L1.91 9.5L5 7.635Z"
+                      fill="white"
+                    />
+                  </svg>
+                </div>
+                <p class="continue__card__rating">4.2/5</p>
+              </div>
+            </div>
+          </li>
+          <li class="continue__card continue__background--3">
+            <div class="continue__card__text-new-episode--wrapper">
+              <p class="continue__card__text-new-episode">Episode Baru</p>
+            </div>
+            <div class="gradient"></div>
+            <div class="continue__card__text">
+              <p class="continue__card__title">Blue Lock</p>
+              <div class="continue__card__rating__wrapper">
+                <div class="icon-star">
+                  <svg
+                    width="10"
+                    height="10"
+                    viewBox="0 0 10 10"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M5 7.635L8.09 9.5L7.27 5.985L10 3.62L6.405 3.31L5 0L3.595 3.31L0 3.62L2.725 5.985L1.91 9.5L5 7.635Z"
+                      fill="white"
+                    />
+                  </svg>
+                </div>
+                <p class="continue__card__rating">4.6/5</p>
+              </div>
+            </div>
+          </li>
+          <li class="continue__card continue__background--4">
+            <div class="gradient"></div>
+            <div class="continue__card__text">
+              <p class="continue__card__title">A Man Called Otto</p>
+              <div class="continue__card__rating__wrapper">
+                <div class="icon-star">
+                  <svg
+                    width="10"
+                    height="10"
+                    viewBox="0 0 10 10"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M5 7.635L8.09 9.5L7.27 5.985L10 3.62L6.405 3.31L5 0L3.595 3.31L0 3.62L2.725 5.985L1.91 9.5L5 7.635Z"
+                      fill="white"
+                    />
+                  </svg>
+                </div>
+                <p class="continue__card__rating">4.4/5</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="top-rating">
+      <p class="top-rating__title">Top Rating Film dan Series Hari ini</p>
+      <div class="relative top-rating__card--padding">
+        <div class="top-rating__card__button__wrapper">
+          <div class="top-rating__card__button__next">
+            <svg
+              width="44"
+              height="44"
+              viewBox="0 0 44 44"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect width="44" height="44" rx="22" fill="#2F3334" />
+              <rect
+                x="0.5"
+                y="0.5"
+                width="43"
+                height="43"
+                rx="21.5"
+                stroke="#E7E3FC"
+                stroke-opacity="0.23"
+              />
+              <path
+                d="M30.0002 21.0001V23.0001H18.0002L23.5002 28.5001L22.0802 29.9201L14.1602 22.0001L22.0802 14.0801L23.5002 15.5001L18.0002 21.0001H30.0002Z"
+                fill="white"
+              />
+            </svg>
+          </div>
+
+          <div class="top-rating__card__button__prev">
+            <svg
+              width="44"
+              height="44"
+              viewBox="0 0 44 44"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect width="44" height="44" rx="22" fill="#2F3334" />
+              <rect
+                x="0.5"
+                y="0.5"
+                width="43"
+                height="43"
+                rx="21.5"
+                stroke="#E7E3FC"
+                stroke-opacity="0.23"
+              />
+              <path
+                d="M14 21.0001V23.0001H26L20.5 28.5001L21.92 29.9201L29.84 22.0001L21.92 14.0801L20.5 15.5001L26 21.0001H14Z"
+                fill="white"
+              />
+            </svg>
+          </div>
+        </div>
+        <ul class="top-rating__card__wrapper">
+          <li class="top-rating__card top-rating__card--background-1">
+            <div class="top-rating__card__text-new-episode--wrapper">
+              <p class="top-rating__card__text-new-episode">Episode Baru</p>
+            </div>
+          </li>
+          <li class="top-rating__card top-rating__card--background-2"></li>
+          <li class="top-rating__card top-rating__card--background-4"></li>
+          <li class="top-rating__card top-rating__card--background-3">
+            <div class="top-rating__card__text-new-episode--wrapper">
+              <p class="top-rating__card__text-new-episode">Episode Baru</p>
+            </div>
+          </li>
+          <li class="top-rating__card top-rating__card--background-5">
+            <div class="film-trending__card__text-top--wrapper">
+              <p>Top</p>
+              <p>10</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="film-trending">
+      <p class="film-trending__title">Film Trending</p>
+      <div class="relative film-trending__card--padding">
+        <div class="top-rating__card__button__wrapper">
+          <div class="top-rating__card__button__next">
+            <svg
+              width="44"
+              height="44"
+              viewBox="0 0 44 44"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect width="44" height="44" rx="22" fill="#2F3334" />
+              <rect
+                x="0.5"
+                y="0.5"
+                width="43"
+                height="43"
+                rx="21.5"
+                stroke="#E7E3FC"
+                stroke-opacity="0.23"
+              />
+              <path
+                d="M30.0002 21.0001V23.0001H18.0002L23.5002 28.5001L22.0802 29.9201L14.1602 22.0001L22.0802 14.0801L23.5002 15.5001L18.0002 21.0001H30.0002Z"
+                fill="white"
+              />
+            </svg>
+          </div>
+
+          <div class="top-rating__card__button__prev">
+            <svg
+              width="44"
+              height="44"
+              viewBox="0 0 44 44"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect width="44" height="44" rx="22" fill="#2F3334" />
+              <rect
+                x="0.5"
+                y="0.5"
+                width="43"
+                height="43"
+                rx="21.5"
+                stroke="#E7E3FC"
+                stroke-opacity="0.23"
+              />
+              <path
+                d="M14 21.0001V23.0001H26L20.5 28.5001L21.92 29.9201L29.84 22.0001L21.92 14.0801L20.5 15.5001L26 21.0001H14Z"
+                fill="white"
+              />
+            </svg>
+          </div>
+        </div>
+        <ul class="film-trending__card__wrapper">
+          <li class="film-trending__card film-trending__card--background-1">
+            <div class="film-trending__card__text-top--wrapper">
+              <p>Top</p>
+              <p>10</p>
+            </div>
+          </li>
+          <li class="film-trending__card film-trending__card--background-2">
+            <div class="film-trending__card__text-top--wrapper">
+              <p>Top</p>
+              <p>10</p>
+            </div>
+          </li>
+          <li class="film-trending__card film-trending__card--background-3">
+            <div class="film-trending__card__text-top--wrapper">
+              <p>Top</p>
+              <p>10</p>
+            </div>
+          </li>
+          <li class="film-trending__card film-trending__card--background-4">
+            <div class="film-trending__card__text-top--wrapper">
+              <p>Top</p>
+              <p>10</p>
+            </div>
+          </li>
+          <li class="film-trending__card film-trending__card--background-5">
+            <div class="film-trending__card__text-top--wrapper">
+              <p>Top</p>
+              <p>10</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="rilis-baru">
+      <p class="rilis-baru__title">Rilis Baru</p>
+      <div class="relative rilis-baru__card--padding">
+        <div class="top-rating__card__button__wrapper">
+          <div class="top-rating__card__button__next">
+            <svg
+              width="44"
+              height="44"
+              viewBox="0 0 44 44"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect width="44" height="44" rx="22" fill="#2F3334" />
+              <rect
+                x="0.5"
+                y="0.5"
+                width="43"
+                height="43"
+                rx="21.5"
+                stroke="#E7E3FC"
+                stroke-opacity="0.23"
+              />
+              <path
+                d="M30.0002 21.0001V23.0001H18.0002L23.5002 28.5001L22.0802 29.9201L14.1602 22.0001L22.0802 14.0801L23.5002 15.5001L18.0002 21.0001H30.0002Z"
+                fill="white"
+              />
+            </svg>
+          </div>
+
+          <div class="top-rating__card__button__prev">
+            <svg
+              width="44"
+              height="44"
+              viewBox="0 0 44 44"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect width="44" height="44" rx="22" fill="#2F3334" />
+              <rect
+                x="0.5"
+                y="0.5"
+                width="43"
+                height="43"
+                rx="21.5"
+                stroke="#E7E3FC"
+                stroke-opacity="0.23"
+              />
+              <path
+                d="M14 21.0001V23.0001H26L20.5 28.5001L21.92 29.9201L29.84 22.0001L21.92 14.0801L20.5 15.5001L26 21.0001H14Z"
+                fill="white"
+              />
+            </svg>
+          </div>
+        </div>
+        <ul class="rilis-baru__card__wrapper">
+          <li class="rilis-baru__card rilis-baru__card--background-1">
+            <div class="rilis-baru__card__text-top--wrapper">
+              <p>Top</p>
+              <p>10</p>
+            </div>
+          </li>
+          <li class="rilis-baru__card rilis-baru__card--background-2">
+            <div class="top-rating__card__text-new-episode--wrapper">
+              <p class="top-rating__card__text-new-episode">Episode Baru</p>
+            </div>
+          </li>
+          <li class="rilis-baru__card rilis-baru__card--background-3">
+            <div class="rilis-baru__card__text-top--wrapper">
+              <p>Top</p>
+              <p>10</p>
+            </div>
+          </li>
+          <li class="rilis-baru__card rilis-baru__card--background-4">
+            <div class="top-rating__card__text-new-episode--wrapper">
+              <p class="top-rating__card__text-new-episode">Episode Baru</p>
+            </div>
+          </li>
+          <li class="rilis-baru__card rilis-baru__card--background-5"></li>
+        </ul>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer__logo--container">
+        <div class="footer__logo--wrapper">
+          <div class="footer__logo">
+            <svg
+              width="25"
+              height="21"
+              viewBox="0 0 25 21"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M23.313 0.145996L18.728 0.958496L21.9247 4.646L24.223 4.22933L23.313 0.145996ZM15.298 1.56266L12.9997 1.96891L16.208 5.646L18.4947 5.23975L15.298 1.56266ZM9.58135 2.56266L7.28301 2.98975L10.4913 6.66683L12.778 6.26058L9.58135 2.56266ZM3.85301 3.60433L2.70968 3.80225C2.10346 3.91039 1.57008 4.22891 1.22666 4.68788C0.883238 5.14684 0.757845 5.70873 0.878011 6.25016L1.33301 8.29183L7.04968 7.28141L3.85301 3.60433ZM1.33301 8.29183V18.7085C1.33301 19.8647 2.38301 20.7918 3.66635 20.7918H22.333C23.628 20.7918 24.6663 19.8647 24.6663 18.7085V8.29183H1.33301Z"
+                fill="white"
+              />
+            </svg>
+          </div>
+
+          <p>CHILL</p>
+        </div>
+
+        <div class="footer__copy">
+          <p>@2023 Chill All Rights Reserved</p>
+        </div>
+      </div>
+
+      <ul class="footer__menu__mobile">
+        <li class="footer__menu">
+          <p>Genre</p>
+          <div>
+            <svg
+              width="8"
+              height="13"
+              viewBox="0 0 8 13"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0.589844 11.33L5.16984 6.75L0.589844 2.16L1.99984 0.75L7.99984 6.75L1.99984 12.75L0.589844 11.33Z"
+                fill="white"
+              />
+            </svg>
+          </div>
+        </li>
+
+        <li class="footer__menu">
+          <p>Bantuan</p>
+          <div>
+            <svg
+              width="8"
+              height="13"
+              viewBox="0 0 8 13"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0.589844 11.33L5.16984 6.75L0.589844 2.16L1.99984 0.75L7.99984 6.75L1.99984 12.75L0.589844 11.33Z"
+                fill="white"
+              />
+            </svg>
+          </div>
+        </li>
+      </ul>
+
+      <!-- <div class="footer__menu__desktop"> -->
+      <div class="footer__menu__genre__wrapper__desktop">
+        <p class="footer__menu__genre__title">Genre</p>
+        <ul class="footer__menu__genre">
+          <div>
+            <li>Aksi</li>
+            <li>Drama</li>
+            <li>Komedi</li>
+            <li>Sains & Alam</li>
+          </div>
+          <div>
+            <li>Anak-Anak</li>
+            <li>Fantasi Ilmiah & Fantasi</li>
+            <li>Petualangan</li>
+            <li>Thriller</li>
+          </div>
+          <div>
+            <li>Anime</li>
+            <li>Kejahatan</li>
+            <li>Perang</li>
+            <li>Britania</li>
+          </div>
+          <div>
+            <li>KDrama</li>
+            <li>Romantis</li>
+          </div>
+        </ul>
+      </div>
+
+      <div class="footer__menu__bantuan__wrapper__desktop">
+        <p class="footer__menu__bantuan__title">Bantuan</p>
+        <ul class="footer__menu__bantuan">
+          <li>FAQ</li>
+          <li>Kontak Kami</li>
+          <li>Privasi</li>
+          <li>Syarat & Ketentuan</li>
+        </ul>
+      </div>
+      <!-- </div> -->
+    </footer>
+
+    <script>
+      const btnMobile = document.getElementById('buttonMenuMobile');
+      const menuMobile = document.getElementById('menuMobile');
+      const menuMobileKeluar = document.getElementById('menuMobileKeluar');
+
+      menuMobileKeluar.onclick = function () {
+        location.href = './index.html';
+      };
+
+      btnMobile.addEventListener('click', () => {
+        let { display } = window.getComputedStyle(menuMobile, null);
+        console.log({ display });
+
+        if (display == 'block') {
+          menuMobile.style.display = 'none';
+        } else {
+          menuMobile.style.display = 'block';
+        }
+      });
+    </script>
+  </body>
+</html>

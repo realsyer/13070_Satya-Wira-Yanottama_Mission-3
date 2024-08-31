@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&display=swap"
+        rel="stylesheet" />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="Style.css" />
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="background">
+        <div class="wrapper">
+            <div class="background-login">
+                <p class="text-chill">
+                    <img class="gambarChill" src=".\film.png" />
+                    CHILL
+                </p>
+
+                <h1 class="text-center text-masuk">Masuk</h1>
+                <p class="text-center text-selamatDatang">Selamat datang kembali!</p>
+
+                <p class="text-input">Username</p>
+                <input class="input" type="text" placeholder="Masukkan Username" />
+
+                <p class="text-input">Kata Sandi</p>
+
+                <div class="div-inputSandi">
+                    <input id="inputPassword" class="input" type="password" placeholder="Masukkan Kata Sandi" />
+                    <img id="inputIcon" class="input-icon" src=".\vector.png" />
+                </div>
+
+                <div class="div-bungkus">
+                    <div class="divide">
+                        <p class="text-daftar">
+                            Belum punya akun ?
+                            <span id="daftar" class="text-span">Daftar</span>
+                        </p>
+
+                        <p class="text-lupa">Lupa kata sandi</p>
+                    </div>
+                </div>
+                <button id="masuk" class="text-login">Masuk</button>
+                <p class="text-atau">Atau</p>
+
+                <button id="masukGoogle" class="text-masukGoogle">
+                    <img class="text-googleGambar"
+                        src="https://www.figma.com/file/kxttbBjIDeC4YzUXalhhxQ/image/79c6a04d7dff82097a22ce080aa49aa3352fd7a2" />
+                    Masuk dengan Google
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const btnMasuk = document.getElementById('masuk');
+
+        btnMasuk.onclick = function () {
+            location.href = './Beranda.html';
+
+
+        };
+        const btnDaftar = document.getElementById('daftar');
+
+        btnDaftar.onclick = function () {
+            location.href = './Daftar.html';
+
+
+        };
+
+        var inputPassword = document.getElementById('inputPassword');
+        var inputIcon = document.getElementById('inputIcon');
+        inputIcon.addEventListener('click', () => {
+            var Attribute = inputPassword.getAttribute('type');
+            if (Attribute == 'password') {
+                inputPassword.setAttribute('type', 'text');
+            } else {
+                inputPassword.setAttribute('type', 'password');
+            }
+        });
+    </script>
+</body>
+
+</html>
